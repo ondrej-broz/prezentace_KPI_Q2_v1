@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prima Kariéra — kompozice</title>
+<style>
+  :root{--red:#CD2A37;--amber:#D3960E;--green:#08835D;--cream:#F5F0E6;--dark:#1C1C1E;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{background:transparent;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+  svg{width:96%;height:auto;display:block;}
+
+  .wrap{transition:transform .56s cubic-bezier(.5,0,.2,1);}
+  .ball,.fillp,.realp{transition:opacity .33s ease;}
+  .strokep{transition:stroke-dashoffset .8s cubic-bezier(.4,0,.3,1);}
+  .body{transition:height .53s cubic-bezier(.45,0,.2,1), y .53s cubic-bezier(.45,0,.2,1);}
+  .typing #ball0{animation:bnc .87s infinite ease-in-out 0s;}
+  .typing #ball1{animation:bnc .87s infinite ease-in-out .12s;}
+  .typing #ball2{animation:bnc .87s infinite ease-in-out .24s;}
+  @keyframes bnc{0%,60%,100%{transform:translateY(0);}30%{transform:translateY(-15px);}}
+</style>
+</head>
+<body>
+  <svg viewBox="40 40 280 150" id="msvg" role="img" aria-label="Prima Kariéra kompozice">
+    <!-- real P (gray) BEHIND dots -->
+    <g class="realp" id="realp" opacity="0" transform="translate(123,24.8) scale(3.0)">
+      <path fill="#e8e8e8" d="M38.1475897,23.3912456c0,7.7332712-6.0257263,11.6247491-15.0887928,11.6247491h-13.3797867v9.9632356H0V11.7664965h23.0587968c9.0630665,0,15.0887928,3.985002,15.0887928,11.6247491ZM28.3261014,23.5812164c0-3.369789-2.4674279-4.4599289-6.073219-4.4599289h-12.5738723v8.8716344h12.5738723c3.6057911,0,6.073219-1.0916012,6.073219-4.4117055Z"/>
+    </g>
+
+    <!-- dots / bodies / pins(draw-on) -->
+    <g class="wrap" id="w0">
+      <rect class="body" id="bd0" x="-11" y="21" width="22" height="0" rx="11" fill="#CD2A37"/>
+      <g transform="translate(-16,-16) scale(1.78)">
+        <path class="strokep" id="s0" fill="none" stroke="#CD2A37" stroke-width="1.1" stroke-linejoin="round" d="M14.7181989,2.050367C12.6174814.3303049,9.8561489-.3570924,7.1941987.177367,2.3249184,1.1756672-.813131,5.9322809.1851694,10.8015617c.434906,2.1212845,1.6200452,4.0146523,3.3380294,5.3328047,1.5629315,1.143919,2.8936496,2.5750923,3.921,4.2169991l.6999998,1.1639996c.2846012.4733086.8990088.6262856,1.3723164.3416824.1401138-.0842495.2574329-.2015686.3416834-.3416824l.6709995-1.118c.8946161-1.5726242,2.1144285-2.936306,3.5779991-4,4.0904083-2.8142805,5.1249142-8.4116383,2.3106346-12.5020466-.476862-.6930933-1.0486526-1.31582-1.6986351-1.8499537l-.0009975.0050023ZM4.74823,9.001367c0,2.3482974,1.9036711,4.2519685,4.2519685,4.2519685s4.2519685-1.9036711,4.2519685-4.2519685-1.9036711-4.2519685-4.2519685-4.2519685-4.2519685,1.9036711-4.2519685,4.2519685Z"/>
+        <path class="fillp" id="f0" fill="#CD2A37" fill-rule="evenodd" opacity="0" d="M14.7181989,2.050367C12.6174814.3303049,9.8561489-.3570924,7.1941987.177367,2.3249184,1.1756672-.813131,5.9322809.1851694,10.8015617c.434906,2.1212845,1.6200452,4.0146523,3.3380294,5.3328047,1.5629315,1.143919,2.8936496,2.5750923,3.921,4.2169991l.6999998,1.1639996c.2846012.4733086.8990088.6262856,1.3723164.3416824.1401138-.0842495.2574329-.2015686.3416834-.3416824l.6709995-1.118c.8946161-1.5726242,2.1144285-2.936306,3.5779991-4,4.0904083-2.8142805,5.1249142-8.4116383,2.3106346-12.5020466-.476862-.6930933-1.0486526-1.31582-1.6986351-1.8499537l-.0009975.0050023ZM4.74823,9.001367c0,2.3482974,1.9036711,4.2519685,4.2519685,4.2519685s4.2519685-1.9036711,4.2519685-4.2519685-1.9036711-4.2519685-4.2519685-4.2519685-4.2519685,1.9036711-4.2519685,4.2519685Z"/>
+      </g>
+      <circle class="ball" id="ball0" r="16" fill="#CD2A37"/>
+    </g>
+    <g class="wrap" id="w1">
+      <rect class="body" id="bd1" x="-11" y="21" width="22" height="0" rx="11" fill="#D3960E"/>
+      <g transform="translate(-16,-16) scale(1.78)">
+        <path class="strokep" id="s1" fill="none" stroke="#D3960E" stroke-width="1.1" stroke-linejoin="round" d="M14.7181989,2.050367C12.6174814.3303049,9.8561489-.3570924,7.1941987.177367,2.3249184,1.1756672-.813131,5.9322809.1851694,10.8015617c.434906,2.1212845,1.6200452,4.0146523,3.3380294,5.3328047,1.5629315,1.143919,2.8936496,2.5750923,3.921,4.2169991l.6999998,1.1639996c.2846012.4733086.8990088.6262856,1.3723164.3416824.1401138-.0842495.2574329-.2015686.3416834-.3416824l.6709995-1.118c.8946161-1.5726242,2.1144285-2.936306,3.5779991-4,4.0904083-2.8142805,5.1249142-8.4116383,2.3106346-12.5020466-.476862-.6930933-1.0486526-1.31582-1.6986351-1.8499537l-.0009975.0050023ZM4.74823,9.001367c0,2.3482974,1.9036711,4.2519685,4.2519685,4.2519685s4.2519685-1.9036711,4.2519685-4.2519685-1.9036711-4.2519685-4.2519685-4.2519685-4.2519685,1.9036711-4.2519685,4.2519685Z"/>
+        <path class="fillp" id="f1" fill="#D3960E" fill-rule="evenodd" opacity="0" d="M14.7181989,2.050367C12.6174814.3303049,9.8561489-.3570924,7.1941987.177367,2.3249184,1.1756672-.813131,5.9322809.1851694,10.8015617c.434906,2.1212845,1.6200452,4.0146523,3.3380294,5.3328047,1.5629315,1.143919,2.8936496,2.5750923,3.921,4.2169991l.6999998,1.1639996c.2846012.4733086.8990088.6262856,1.3723164.3416824.1401138-.0842495.2574329-.2015686.3416834-.3416824l.6709995-1.118c.8946161-1.5726242,2.1144285-2.936306,3.5779991-4,4.0904083-2.8142805,5.1249142-8.4116383,2.3106346-12.5020466-.476862-.6930933-1.0486526-1.31582-1.6986351-1.8499537l-.0009975.0050023ZM4.74823,9.001367c0,2.3482974,1.9036711,4.2519685,4.2519685,4.2519685s4.2519685-1.9036711,4.2519685-4.2519685-1.9036711-4.2519685-4.2519685-4.2519685-4.2519685,1.9036711-4.2519685,4.2519685Z"/>
+      </g>
+      <circle class="ball" id="ball1" r="16" fill="#D3960E"/>
+    </g>
+    <g class="wrap" id="w2">
+      <rect class="body" id="bd2" x="-11" y="21" width="22" height="0" rx="11" fill="#08835D"/>
+      <g transform="translate(-16,-16) scale(1.78)">
+        <path class="strokep" id="s2" fill="none" stroke="#08835D" stroke-width="1.1" stroke-linejoin="round" d="M14.7181989,2.050367C12.6174814.3303049,9.8561489-.3570924,7.1941987.177367,2.3249184,1.1756672-.813131,5.9322809.1851694,10.8015617c.434906,2.1212845,1.6200452,4.0146523,3.3380294,5.3328047,1.5629315,1.143919,2.8936496,2.5750923,3.921,4.2169991l.6999998,1.1639996c.2846012.4733086.8990088.6262856,1.3723164.3416824.1401138-.0842495.2574329-.2015686.3416834-.3416824l.6709995-1.118c.8946161-1.5726242,2.1144285-2.936306,3.5779991-4,4.0904083-2.8142805,5.1249142-8.4116383,2.3106346-12.5020466-.476862-.6930933-1.0486526-1.31582-1.6986351-1.8499537l-.0009975.0050023ZM4.74823,9.001367c0,2.3482974,1.9036711,4.2519685,4.2519685,4.2519685s4.2519685-1.9036711,4.2519685-4.2519685-1.9036711-4.2519685-4.2519685-4.2519685-4.2519685,1.9036711-4.2519685,4.2519685Z"/>
+        <path class="fillp" id="f2" fill="#08835D" fill-rule="evenodd" opacity="0" d="M14.7181989,2.050367C12.6174814.3303049,9.8561489-.3570924,7.1941987.177367,2.3249184,1.1756672-.813131,5.9322809.1851694,10.8015617c.434906,2.1212845,1.6200452,4.0146523,3.3380294,5.3328047,1.5629315,1.143919,2.8936496,2.5750923,3.921,4.2169991l.6999998,1.1639996c.2846012.4733086.8990088.6262856,1.3723164.3416824.1401138-.0842495.2574329-.2015686.3416834-.3416824l.6709995-1.118c.8946161-1.5726242,2.1144285-2.936306,3.5779991-4,4.0904083-2.8142805,5.1249142-8.4116383,2.3106346-12.5020466-.476862-.6930933-1.0486526-1.31582-1.6986351-1.8499537l-.0009975.0050023ZM4.74823,9.001367c0,2.3482974,1.9036711,4.2519685,4.2519685,4.2519685s4.2519685-1.9036711,4.2519685-4.2519685-1.9036711-4.2519685-4.2519685-4.2519685-4.2519685,1.9036711-4.2519685,4.2519685Z"/>
+      </g>
+      <circle class="ball" id="ball2" r="16" fill="#08835D"/>
+    </g>
+  </svg>
+
+<script>
+  const E=id=>document.getElementById(id);
+  const w=[E('w0'),E('w1'),E('w2')], ball=[E('ball0'),E('ball1'),E('ball2')], bd=[E('bd0'),E('bd1'),E('bd2')];
+  const sp=[E('s0'),E('s1'),E('s2')], fp=[E('f0'),E('f1'),E('f2')];
+  const stage=E('msvg'), realp=E('realp');
+
+  // dash lengths for draw-on
+  const LEN=sp.map(p=>{ const L=p.getTotalLength(); p.style.strokeDasharray=L; p.style.strokeDashoffset=L; return L; });
+
+  // positions (centred around x=180,y=110 in original system)
+  const ROW=[[132,110],[180,110],[228,110]];
+  const PEOPLE=[[132,100],[180,100],[228,100]];
+  const PNODE=[[138,80],[138,160],[222,108]];
+  const TRI=[[180,86],[140,150],[220,150]];
+
+  function place(a,s){ s=s||1; w.forEach((el,i)=>el.style.transform=`translate(${a[i][0]}px,${a[i][1]}px) scale(${s})`); }
+  function bodies(h){ bd.forEach(r=>r.setAttribute('height',h)); }
+  function balls(o){ ball.forEach(b=>b.style.opacity=o?1:0); }
+  function fills(o){ fp.forEach(el=>el.style.opacity=o?1:0); }
+  function draw(on){ sp.forEach((p,i)=>p.style.strokeDashoffset = on?0:LEN[i]); }
+  function P_(o){ realp.style.opacity=o?1:0; }
+  function typing(o){ stage.classList.toggle('typing',o); }
+
+  // reset everything to neutral dots
+  function reset(){ typing(false); bodies(0); fills(false); draw(false); P_(false); balls(true); }
+
+  const MODE=(new URLSearchParams(location.search).get('m')||'people');
+
+  const LOOPS={
+    // bodies grow from dots → hold → shrink → repeat
+    people:{ period:3800, init:()=>{reset();place(PEOPLE,1);}, seq:[
+      {t:0,   f:()=>bodies(0)},
+      {t:500, f:()=>bodies(44)},
+      {t:2600,f:()=>bodies(0)}
+    ]},
+    // dots move onto P nodes + real P appears → hold → back to row → repeat
+    p:{ period:4000, init:()=>{reset();place(ROW,1);}, seq:[
+      {t:0,   f:()=>{P_(false);place(ROW,1);}},
+      {t:550, f:()=>{place(PNODE,1);P_(true);}},
+      {t:2700,f:()=>{P_(false);place(ROW,1);}}
+    ]},
+    // dots in a row with the classic "is typing…" bounce (continuous)
+    typing:{ period:0, init:()=>{reset();place(ROW,1);typing(true);}, seq:[] },
+    // dots → triangle → draw pin outline → fill → hold → reset → repeat
+    pins:{ period:4400, init:()=>{reset();place(TRI,1);}, seq:[
+      {t:0,   f:()=>{fills(false);draw(false);balls(true);place(TRI,1);}},
+      {t:500, f:()=>{balls(false);draw(true);}},
+      {t:1500,f:()=>fills(true)},
+      {t:3200,f:()=>{fills(false);draw(false);balls(true);}}
+    ]}
+  };
+
+  const L=LOOPS[MODE]||LOOPS.people;
+  L.init();
+  if(L.period>0){
+    function play(){ L.seq.forEach(s=>setTimeout(s.f,s.t)); }
+    setTimeout(play,400);
+    setInterval(play,L.period);
+  }
+</script>
+</body>
+</html>
